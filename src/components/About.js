@@ -1,104 +1,23 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 function About() {
-    // State for accordion
-  const [isMissionOpen, setIsMissionOpen] = useState(false);
-
-  // State for modal
-  const [selectedTeamMember, setSelectedTeamMember] = useState(null);
-
-  const teamMembers = [
-    {
-      name: 'Rohit Foujdar',
-      role: 'Founder & Head Instructor',
-      img: 'https://via.placeholder.com/150',
-      description: 'Rohit has been practicing yoga for over a decade and is passionate about sharing its benefits with the world.',
-    },
-    {
-      name: 'Jane Doe',
-      role: 'Yoga Specialist',
-      img: 'https://via.placeholder.com/150',
-      description: 'Jane focuses on Vinyasa and Hatha yoga, helping students find balance and inner peace.',
-    },
-    {
-      name: 'John Smith',
-      role: 'Marketing Lead',
-      img: 'https://via.placeholder.com/150',
-      description: 'John manages all marketing initiatives to spread the word about our yoga community.',
-    },
-  ];
-
-//   Function to handle scrolling
-  const scrollToContact = () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-  };
   return (
-    <div className="about-wrapper">
-    {/* Hero Section */}
-    <section className="hero-section">
-      <div className="hero-content">
-        <h1>Welcome to Yoga Vairagyam</h1>
-        <p>
-          Embrace the journey of self-discovery and wellness with Yoga Vairagyam. We are dedicated to transforming lives through the power of yoga.
-        </p>
-        <button className="scroll-button"onClick={scrollToContact}>
-          Contact Us
-        </button>
+    <div className='About'>
+      <div className='hero-section'>
+        <h3 className='hero-h3'>About us</h3>
+        <p className='hero-p'>redBus is India’s largest online bus ticketing platform that has transformed bus travel in the country by bringing ease and convenience to millions of Indians who travel using buses. Founded in 2006, redBus is part of India’s leading online travel company MakeMyTrip Limited (NASDAQ: MMYT). By providing widest choice, superior customer service, lowest prices and unmatched benefits, redBus has served over 18 million customers. redBus has a global presence with operations across Indonesia, Singapore, Malaysia, Colombia and Peru apart from India.</p>
       </div>
-    </section>
-
-    {/* Mission Section with Accordion */}
-    <section className="mission-section">
-      <h2 onClick={() => setIsMissionOpen(!isMissionOpen)}>
-        Our Mission {isMissionOpen ? '▲' : '▼'}
-      </h2>
-      {isMissionOpen && (
-        <p>
-          At Yoga Vairagyam, our mission is to empower individuals with the tools to achieve physical strength, mental clarity, and spiritual growth. Yoga is not just a practice—it's a way of life.
-        </p>
-      )}
-    </section>
-
-    {/* Team Section with Modal */}
-    <section className="team-section">
-      <h2>Meet the Team</h2>
-      <div className="team-grid">
-        {teamMembers.map((member, index) => (
-          <div
-            className="team-card"
-            key={index}
-            onClick={() => setSelectedTeamMember(member)}
-          >
-            <img src={member.img} alt={member.name} />
-            <h3>{member.name}</h3>
-            <p>{member.role}</p>
+      <div className='management'>
+        <h3 className='team-h3'>Management Team</h3>
+        <div className='team'>
+          <img className='ceo' src="https://bl-i.thgim.com/public/incoming/54c76h/article68465083.ece/alternates/FREE_1200/12BG_BL03_REDBUS_JUN_2019.jpg" alt='CEO' />
+          <div className='sangam'>
+            <h4 className='team-h4'>Prakash Sangam, CEO</h4>
+            <p className='team-p'>Prakash Sangam has been Chief Executive Officer of redBus since June 2014. Prior to redBus. He served as an Executive Vice President of Info Edge India (Naukri group), heading two group businesses namely Shiksha.com and Jeevansathi.com. He’s also worked as General Manager of Marketing and Innovation at Airtel and has also had multiple roles across Marketing, Brand Management and Sales at Hindustan Unilever. Prakash has completed his MBA from IIM Calcutta and also holds an Honours degree in Production Engineering from Mumbai University.</p>
           </div>
-        ))}
-      </div>
-    </section>
-
-    {/* Modal for Team Member Details */}
-    {selectedTeamMember && (
-      <div className="modal-overlay" onClick={() => setSelectedTeamMember(null)}>
-        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-          <button className="close-button" onClick={() => setSelectedTeamMember(null)}>×</button>
-          <img src={selectedTeamMember.img} alt={selectedTeamMember.name} />
-          <h3>{selectedTeamMember.name}</h3>
-          <p>{selectedTeamMember.role}</p>
-          <p>{selectedTeamMember.description}</p>
         </div>
       </div>
-    )}
-
-    {/* Contact Section */}
-    <section id="contact" className="contact-section">
-      <h2>Get in Touch</h2>
-      <p>
-        Interested in learning more? Reach out to us at{' '}
-        <a href="mailto:contact@yogavairagyam.com">contact@yogavairagyam.com</a>
-      </p>
-    </section>
-  </div>
+    </div>
   )
 }
 

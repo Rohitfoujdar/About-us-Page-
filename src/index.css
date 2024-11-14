@@ -1,11 +1,10 @@
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 code {
@@ -15,163 +14,69 @@ code {
 
 .header{
   height: 70px;
-  background-color: black;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-.Logo{
-    padding-top: 3px ;
-    /* padding-left: 550px; */
-    width: 50px;
-    height: 50px;
-}
-
-.Menu{
-  color: White;
+  border-radius: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding-left: 20px;
 }
 
+.logo{
+  height: 60px;
+  width: auto;
+}
 
-
-.about-wrapper {
-  padding: 40px;
-  max-width: 1200px;
+.menu{
+  padding: 0px 20px ;
+  font-weight: 550;
+  color: #4a4a4a;
+}
+.About{
+  width: 950px;
   margin: auto;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-/* Hero Section */
-.hero-section {
-  background: linear-gradient(135deg, #56ccf2, #2f80ed);
-  padding: 60px 20px;
-  color: #fff;
-  text-align: center;
-  border-radius: 15px;
-  margin-bottom: 50px;
+.hero-section{
+ margin: 30px;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.hero-h3{
+  color: #D02025;
+  font-size: 25px;
 }
 
-.scroll-button {
-  background-color: #ff7f50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s;
+.hero-p{
+  font-weight: 100;
+  line-height: 1.5;
 }
 
-.scroll-button:hover {
-  background-color: #e67e22;
+.team-h3{
+  color: #D02025;
+  font-size: 25px;
 }
 
-/* Mission Section */
-.mission-section {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 50px;
-  cursor: pointer;
-  text-align: center;
+.team-h4{
+  color: #D02025;
 }
 
-.mission-section h2 {
-  font-size: 2rem;
-  color: #2f80ed;
-}
-
-.mission-section p {
-  font-size: 1rem;
-  margin-top: 20px;
-}
-
-/* Team Section */
-.team-section {
-  text-align: center;
-}
-
-.team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.team-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  text-align: center;
-  width: 200px;
-  transition: transform 0.3s;
-}
-
-.team-card:hover {
-  transform: translateY(-10px);
-}
-
-/* Modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 400px;
-  position: relative;
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.modal-content img {
+.ceo{
+  height: 138px;
+  width: 138px;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
 }
 
-/* Contact Section */
-.contact-section {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  padding: 50px 20px;
-  color: #fff;
-  text-align: center;
-  border-radius: 15px;
-  margin-top: 50px;
+.team-p{
+  font-weight: 100;
+  line-height: 1.5;
+}
+.team{
+  display: flex;
 }
 
-.contact-section a {
-  color: #ffeb3b;
-  text-decoration: none;
+
+.management{
+  width: 1000px;
 }
